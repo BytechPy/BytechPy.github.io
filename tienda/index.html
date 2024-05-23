@@ -32,4 +32,26 @@ Realizar un pedido
         }
       });
     });
-  </script></body></html>
+  </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const navToggle = document.getElementById('nav-toggle');
+        const navContent = document.getElementById('nav-content');
+        const header = document.getElementById('header');
+    
+        if (navToggle && navContent && header) {
+            window.addEventListener('scroll', function () {
+                const shouldBeDark = window.scrollY > 20 || !navContent.classList.contains('hidden');
+                header.classList.toggle('bg-[#13151a]', shouldBeDark);
+                header.classList.toggle('bg-transparent', !shouldBeDark);
+            });
+
+            navToggle.addEventListener('click', function () {
+                navContent.classList.toggle('hidden');
+                header.classList.toggle('bg-[#13151a]', !navContent.classList.contains('hidden'));
+                header.classList.toggle('bg-transparent', navContent.classList.contains('hidden'));                
+            });
+        }
+    });
+    
+    </script></body></html>
