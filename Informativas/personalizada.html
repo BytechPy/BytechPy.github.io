@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa Creativa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom animations */
+        .slide-in {
+            animation: slideIn 1.5s ease-out;
+        }
+        .fade-in-up {
+            animation: fadeInUp 1.8s ease-out;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800 leading-normal tracking-normal">
+
+    <!-- Header con logo y redes sociales -->
+    <header class="bg-white shadow-md py-4 px-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/50" alt="Logo Empresa" class="w-12 h-12 mr-3">
+                <span class="text-2xl font-bold text-indigo-600">Empresa Creativa</span>
+            </div>
+            <!-- Redes Sociales y Contacto -->
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#" class="text-gray-600 hover:text-indigo-500">Contacto</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-500">Ubicación</a>
+                <a href="mailto:info@empresa.com" class="text-gray-600 hover:text-indigo-500">info@empresa.com</a>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-indigo-500">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557a9.85 9.85 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337 3.4a9.864 9.864 0 0 1-3.127 1.197 4.916 4.916 0 0 0-8.374 4.482A13.93 13.93 0 0 1 1.671 3.149a4.917 4.917 0 0 0 1.523 6.573 4.897 4.897 0 0 1-2.229-.616v.061a4.917 4.917 0 0 0 3.946 4.83 4.902 4.902 0 0 1-2.224.085 4.917 4.917 0 0 0 4.588 3.415A9.868 9.868 0 0 1 0 21.543a13.92 13.92 0 0 0 7.548 2.212c9.057 0 14.01-7.512 14.01-14.01 0-.213-.004-.426-.013-.637A10.03 10.03 0 0 0 24 4.557z"></path></svg>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-indigo-500">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.594 0 0 .594 0 1.326v21.348C0 23.407.593 24 1.325 24H12.82v-9.293H9.692V10.71h3.128V8.349c0-3.1 1.893-4.788 4.66-4.788 1.324 0 2.463.099 2.794.142v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.764v2.31h3.592l-.468 3.997h-3.124V24h6.116C23.407 24 24 23.406 24 22.674V1.326C24 .594 23.407 0 22.675 0"></path></svg>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-indigo-500">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04c-5.523 0-10 4.477-10 10 0 4.992 3.658 9.128 8.438 9.878.616.112.844-.267.844-.593 0-.293-.01-1.068-.016-2.097-3.338.726-4.042-1.61-4.042-1.61-.562-1.428-1.374-1.81-1.374-1.81-1.122-.768.084-.753.084-.753 1.24.084 1.894 1.274 1.894 1.274 1.104 1.894 2.897 1.346 3.604 1.03.112-.8.432-1.346.788-1.656-2.664-.3-5.466-1.332-5.466-5.933 0-1.31.468-2.384 1.235-3.23-.124-.303-.535-1.523.117-3.174 0 0 1.007-.323 3.3 1.23.96-.267 1.985-.4 3.005-.404 1.02.004 2.044.137 3.005.404 2.29-1.554 3.297-1.23 3.297-1.23.652 1.651.242 2.871.118 3.174.768.846 1.234 1.92 1.234 3.23 0 4.613-2.806 5.63-5.476 5.927.444.382.836 1.136.836 2.29 0 1.653-.015 2.986-.015 3.39 0 .33.227.711.847.592C20.342 21.165 24 17.03 24 12.04c0-5.523-4.477-10-10-10"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white py-12 text-center">
+        <h1 class="text-5xl font-extrabold leading-tight slide-in">Soluciones Innovadoras para tu Empresa</h1>
+        <p class="mt-4 text-xl fade-in-up">Transformamos tu visión en realidad con tecnología avanzada.</p>
+    </section>
+
+    <!-- Sección Principal -->
+    <section class="container mx-auto py-16 px-4 text-center">
+        <h2 class="text-4xl font-semibold mb-8 text-gray-800 slide-in">Nuestros Servicios</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:scale-105 fade-in-up">
+                <div class="mb-4">
+                    <svg class="w-16 h-16 text-indigo-500 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.75l-6 6m0 0l6 6m-6-6h18"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Consultoría Estratégica</h3>
+                <p class="text-gray-600">Creamos estrategias personalizadas para impulsar el crecimiento de tu empresa.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:scale-105 fade-in-up">
+                <div class="mb-4">
+                    <svg class="w-16 h-16 text-purple-500 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 14v-4"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 14V4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Desarrollo Web</h3>
+                <p class="text-gray-600">Diseñamos y desarrollamos soluciones web modernas y eficientes.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:scale-105 fade-in-up">
+                <div class="mb-4">
+                    <svg class="w-16 h-16 text-pink-500 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 14v-4"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 14V4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Automatización de Procesos</h3>
+                <p class="text-gray-600">Integramos soluciones tecnológicas para optimizar la eficiencia operativa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Testimonios -->
+    <section class="bg-gray-900 text-white py-16">
+        <h2 class="text-4xl font-semibold text-center mb-8">Lo que dicen nuestros clientes</h2>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-center px-4">
+            <div class="p-8 bg-gray-800 rounded-lg shadow-lg fade-in-up">
+                <p class="text-lg italic mb-4">"La mejor decisión que hemos tomado fue confiar en esta empresa. Sus servicios han superado nuestras expectativas."</p>
+                <h4 class="text-2xl font-bold">- María González</h4>
+            </div>
+            <div class="p-8 bg-gray-800 rounded-lg shadow-lg fade-in-up">
+                <p class="text-lg italic mb-4">"El equipo es increíble, y nos brindaron soluciones innovadoras para nuestro negocio. Altamente recomendados."</p>
+                <h4 class="text-2xl font-bold">- Carlos Pérez</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-200 py-8 text-center">
+        <p>© 2024 Empresa Creativa - Todos los derechos reservados</p>
+        <p><a href="mailto:info@empresa.com" class="text-blue-400 hover:underline">info@empresa.com</a></p>
+    </footer>
+</body>
+</html>
